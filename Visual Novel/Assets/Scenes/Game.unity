@@ -800,11 +800,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseOneDialogue:
-  - 'Facey: Hey!'
-  - 'Facey: Clowny and I are going to give you a little test.'
-  - 'Clowny: Honk!'
-  - 'Facey: Haha, yeah, anyway, we''re going to ask some questions.'
-  - Ready to start?
+  - Huh? Where... Where am I?
+  - Oh silly, you're home of course!
   phaseTwoDialogue:
   - 'Facey: Hmm, ok.'
   - 'Facey: We want to know:'
