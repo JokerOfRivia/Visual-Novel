@@ -121,8 +121,6 @@ public class GameManager : MonoBehaviour
                 phaseIndex = 1;
                 break;
             case 1:
-                choiceOne.SetDialogueText("You're not my mother.");
-                choiceTwo.SetDialogueText("Yes, I do recognize you.");
                 currentDialogue = phaseThreeDialogue;
                 phaseIndex = 2;
                 break;
