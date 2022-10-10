@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     void SetDialogueText()
     {
         //if we haven't gotten our results yet
-        if (phaseIndex < 4)
+        if (phaseIndex < 6)
         {
             //set the dialogue component to show the line we're on
             dialogueBox.text = currentDialogue[dialogueIndex];
