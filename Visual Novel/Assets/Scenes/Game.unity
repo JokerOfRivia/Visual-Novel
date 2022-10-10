@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yes
+  m_text: Who the hell are you?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -803,9 +803,7 @@ MonoBehaviour:
   - Huh? Where... Where am I?
   - Oh silly, you're home of course!
   phaseTwoDialogue:
-  - 'Facey: Hmm, ok.'
-  - 'Facey: We want to know:'
-  - 'Facey: Have you ever slipped on a banana peel?'
+  - Don't you recognize your own mother?
   phaseThreeDialogue:
   - 'Facey: Interesting...'
   - 'Clowny: Honk!'
@@ -1617,7 +1615,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No
+  m_text: This isn't home.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

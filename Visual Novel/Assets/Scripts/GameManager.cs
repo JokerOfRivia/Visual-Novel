@@ -91,16 +91,15 @@ public class GameManager : MonoBehaviour
         choiceTwo.SetActive(true);
     }
 
-    public void FaceyChoice()
+    public void ChoiceOne()
     {
         //if we press "no", just go to the next phase of questions
         GoToNextPhase();
     }
 
-    public void ClownyChoice()
+    public void ChoiceTwo()
     {
         //if we press "yes", increase clowny's score and then go to the next phase
-        clownyLove++;
         GoToNextPhase();
     }
 
@@ -122,6 +121,8 @@ public class GameManager : MonoBehaviour
                 phaseIndex = 1;
                 break;
             case 1:
+                choiceOne.SetDialogueText("You're not my mother.");
+                choiceTwo.SetDialogueText("Yes, I do recognize you.");
                 currentDialogue = phaseThreeDialogue;
                 phaseIndex = 2;
                 break;
