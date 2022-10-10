@@ -802,26 +802,34 @@ MonoBehaviour:
   phaseOneDialogue:
   - Huh? Where... Where am I?
   - Oh silly, you're home of course!
+  - Home?
+  - Yes! Nice, warm, home sweet home!
   phaseTwoDialogue:
   - Don't you recognize your own mother?
   phaseThreeDialogue:
-  - 'Facey: Interesting...'
-  - 'Clowny: Honk!'
-  - 'Facey: Right, next question:'
-  - 'Facey: Do you wear a lot of makeup?'
+  - Of course I'm your mother sweetie!
+  - Now, you must be getting really sleepy right?
   phaseFourDialogue:
-  - 'Clowny: Honk!'
-  - 'Facey: Oh, looks like clowny has a question.'
-  - 'Clowny: Honk honk.'
-  - 'Clowny: Honk honk, honk honk honk honk?'
+  - Your Father will be getting home soon.
+  - You'd best be quiet now, you know he hates a loud house.
+  phaseFiveDialogue:
+  - Now, you're making Mother very, very angry sweetie.
+  - You'd best be more civil.
+  phaseSixDialogue:
+  - Why must you be like this?
+  - Just be quiet!
+  - Listen to your mother!
+  phaseSevenDialogue:
+  - Fine then.
+  - You are not fit to be my son.
   choiceOne: {fileID: 1100031863}
   choiceTwo: {fileID: 352756044}
   nextButton: {fileID: 1343810850}
   dialogueBox: {fileID: 1371581285}
-  clownMessage: Looks like you're a clown!
-  notAClownMessage: 'Bad news: You''re not a clown.'
-  faceyAnim: {fileID: 760631625}
-  clownyAnim: {fileID: 2024936181}
+  clownMessage: 
+  notAClownMessage: 
+  faceyAnim: {fileID: 0}
+  clownyAnim: {fileID: 0}
 --- !u!1 &1100031863
 GameObject:
   m_ObjectHideFlags: 0

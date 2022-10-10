@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public List<string> phaseTwoDialogue;
     public List<string> phaseThreeDialogue;
     public List<string> phaseFourDialogue;
+    public List<string> phaseFiveDialogue;
+    public List<string> phaseSixDialogue;
+    public List<string> phaseSevenDialogue;
 
     //holds the phase we're currently going through
     List<string> currentDialogue;
@@ -27,16 +30,8 @@ public class GameManager : MonoBehaviour
     //text component that is showing the dialogue
     public TMP_Text dialogueBox;
 
-    //"score" for how much of a clown u r
-    int clownyLove = 0;
-
-    //text for results of the quiz
-    public string clownMessage;
-    public string notAClownMessage;
 
     //animator components for each face
-    public Animator faceyAnim;
-    public Animator clownyAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +42,6 @@ public class GameManager : MonoBehaviour
         //start the dialogue
         currentDialogue = phaseOneDialogue;
         dialogueBox.text = currentDialogue[dialogueIndex];
-        faceyAnim.SetTrigger("isTalking");
     }
 
     void SetDialogueText()
@@ -116,7 +110,6 @@ public class GameManager : MonoBehaviour
         switch (phaseIndex)
         {
             case 0:
-                faceyAnim.SetTrigger("isTalking");
                 currentDialogue = phaseTwoDialogue;
                 phaseIndex = 1;
                 break;
@@ -125,15 +118,22 @@ public class GameManager : MonoBehaviour
                 phaseIndex = 2;
                 break;
             case 2:
-                clownyAnim.SetTrigger("isTalking");
                 currentDialogue = phaseFourDialogue;
                 phaseIndex = 3;
                 break;
             case 3:
-                faceyAnim.SetTrigger("isTalking");
+                currentDialogue = phaseFiveDialogue;
                 phaseIndex = 4;
-                GiveResults();
                 break;
+            case 4:
+                currentDialogue = phaseSixDialogue;
+                phaseIndex = 5;
+                break;
+            case 5:
+                currentDialogue = phaseSevenDialogue;
+                phaseIndex = 6;
+                break;
+
         }
         SetDialogueText();
     }
@@ -141,14 +141,7 @@ public class GameManager : MonoBehaviour
     void GiveResults()
     {
         //if the clown score is higher than 2, then u r a clown
-        if (clownyLove > 2)
-        {
-            dialogueBox.text = clownMessage;
-        }
-        else
-        {
-            dialogueBox.text = notAClownMessage;
-        }
+        dialogueBox.text="???";
     }
 
 }
