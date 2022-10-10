@@ -344,7 +344,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 945760854}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: FaceyChoice
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -826,10 +826,6 @@ MonoBehaviour:
   choiceTwo: {fileID: 352756044}
   nextButton: {fileID: 1343810850}
   dialogueBox: {fileID: 1371581285}
-  clownMessage: 
-  notAClownMessage: 
-  faceyAnim: {fileID: 0}
-  clownyAnim: {fileID: 0}
 --- !u!1 &1100031863
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,7 +912,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 945760854}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ClownyChoice
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

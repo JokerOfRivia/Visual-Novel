@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     public void AdvanceDialog()
     {
         //if we haven't gotten our results yet
-        if (phaseIndex < 4)
+        if (phaseIndex < 6)
         {
             //go to the next line
             dialogueIndex++;
@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
     public void ChoiceOne()
     {
         //if we press "no", just go to the next phase of questions
-        GoToNextPhase();
+            GoToNextPhase();
     }
 
     public void ChoiceTwo()
