@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
             case 5:
                 currentDialogue = phaseSevenDialogue;
                 text1.text="What happens next?";
-                text2.text="What Happens next?";
+                text2.text="What happens next?";
                 phaseIndex = 6;
                 break;
             case 6:

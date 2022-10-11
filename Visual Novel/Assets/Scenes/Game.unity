@@ -428,7 +428,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.047169805, g: 0.041607328, b: 0.041607328, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -550,8 +550,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: 59}
-  m_SizeDelta: {x: 229.59, y: 229.59}
+  m_AnchoredPosition: {x: -21, y: 0}
+  m_SizeDelta: {x: 743.64, y: 451.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &760631623
 MonoBehaviour:
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3564ea5e193f24f3080693a4d379e1e7, type: 3}
+  m_Texture: {fileID: 2800000, guid: 38b5065e4934f44e4a1f7a1a033afeeb, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1164,8 +1164,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
