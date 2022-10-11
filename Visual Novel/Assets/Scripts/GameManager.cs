@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     //text component that is showing the dialogue
     public TMP_Text dialogueBox;
+    public TMP_Text text1;
+    public TMP_Text text2;
 
 
     //animator components for each face
@@ -47,7 +49,7 @@ public class GameManager : MonoBehaviour
     void SetDialogueText()
     {
         //if we haven't gotten our results yet
-        if (phaseIndex < 6)
+        if (phaseIndex < 7)
         {
             //set the dialogue component to show the line we're on
             dialogueBox.text = currentDialogue[dialogueIndex];
@@ -57,7 +59,7 @@ public class GameManager : MonoBehaviour
     public void AdvanceDialog()
     {
         //if we haven't gotten our results yet
-        if (phaseIndex < 6)
+        if (phaseIndex < 7)
         {
             //go to the next line
             dialogueIndex++;
@@ -111,27 +113,42 @@ public class GameManager : MonoBehaviour
         {
             case 0:
                 currentDialogue = phaseTwoDialogue;
+                text1.text="You aren't my mom.";
+                text2.text="I'm getting out of here!";
                 phaseIndex = 1;
                 break;
             case 1:
                 currentDialogue = phaseThreeDialogue;
+                text1.text="Why aren't you listening to me?";
+                text2.text="Tired? I just woke up!";
                 phaseIndex = 2;
                 break;
             case 2:
                 currentDialogue = phaseFourDialogue;
+                text1.text="I will not!";
+                text2.text="Where's a light around here!?";
                 phaseIndex = 3;
                 break;
             case 3:
                 currentDialogue = phaseFiveDialogue;
+                text1.text="Now's no time for civil!";
+                text2.text="Let me out of here!";
                 phaseIndex = 4;
                 break;
             case 4:
                 currentDialogue = phaseSixDialogue;
+                text1.text="No.";
+                text2.text="No.";
                 phaseIndex = 5;
                 break;
             case 5:
                 currentDialogue = phaseSevenDialogue;
+                text1.text="What happens next?";
+                text2.text="What Happens next?";
                 phaseIndex = 6;
+                break;
+            case 6:
+                phaseIndex = 7;
                 break;
 
         }
